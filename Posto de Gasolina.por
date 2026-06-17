@@ -8,6 +8,7 @@ programa
 
 		/*
 		 * 1 - Etanol: Valor da Gasolina é de R$ 6.8
+     * 2 - Comum: valor da gasolina e de 6.62
 		 */
 
 			enquanto(verdadeiro){
@@ -25,19 +26,24 @@ programa
 	
 					caso 1: 
 					v_gasolina = qtd_gasolina * 6.8
+         				 pare
+
+         				 caso 2:
+					v_gasolina = qtd_gasolina * 6.62
+        				pare
+
 				}
 		
 			escreva("Valor final de: R$ ", v_gasolina, "\n")
 			}
 	}
 }
-
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 483; 
+ * @POSICAO-CURSOR = 581; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
