@@ -8,13 +8,14 @@ programa
 
 		/*
 		 * 1 - Etanol: Valor da Gasolina é de R$ 6.8
-     * 2 - Comum: valor da gasolina e de 6.62
+     	* 2 - Comum: valor da gasolina e de 6.62
 		 */
 
 			enquanto(verdadeiro){
 				
 				escreva("0 - Sair\n")
 				escreva("1 - Etanol\n")
+        			escreva("2 - Comum\n")
 				escreva("Escolha: ")
 					leia(op)
 				escreva("Iforme quantos litros de Gasolina: ")
@@ -26,11 +27,11 @@ programa
 	
 					caso 1: 
 					v_gasolina = qtd_gasolina * 6.8
-         				 pare
+          			pare
 
-         				 caso 2:
+          			caso 2:
 					v_gasolina = qtd_gasolina * 6.62
-        				pare
+          			pare
 
 				}
 		
@@ -43,7 +44,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 581; 
+ * @POSICAO-CURSOR = 691; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
