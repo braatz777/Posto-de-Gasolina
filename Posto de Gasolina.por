@@ -17,9 +17,10 @@ programa
 				escreva("1 - Etanol\n")
         			escreva("2 - Comum\n")
 				escreva("Escolha: ")
-					leia(op)
+				leia(op)
+				
 				escreva("Iforme quantos litros de Gasolina: ")
-					leia(qtd_gasolina)
+				leia(qtd_gasolina)
 	
 				escolha(op){
 					caso 0:
@@ -44,7 +45,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 691; 
+ * @POSICAO-CURSOR = 694; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
