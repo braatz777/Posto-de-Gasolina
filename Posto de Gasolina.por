@@ -7,7 +7,7 @@ programa
 		real v_gasolina = 0.0, qtd_gasolina = 0.0
 
 		/*
-		 * 1 - Etanol: Valor da litro é de R$ 6.8
+		* 1 - Etanol: Valor da litro é de R$ 6.8
      	* 2 - Comum: valor do litro e de 6.62
      	* 3 - Aditivada: Valor do litro é R$ 6.5
 		 */
@@ -29,19 +29,20 @@ programa
 	
 					caso 1: 
 					v_gasolina = qtd_gasolina * 6.8
+					escreva("Valor final de: R$ ", v_gasolina, "\n")
           			pare
 
           			caso 2:
 					v_gasolina = qtd_gasolina * 6.62
+					escreva("Valor final de: R$ ", v_gasolina, "\n")
           			pare
 
           			caso 3:
           			v_gasolina = qtd_gasolina * 6.5
+          			escreva("Valor final de: R$ ", v_gasolina, "\n")
           			pare
 
 				}
-		
-			escreva("Valor final de: R$ ", v_gasolina, "\n")
 			}
 	}
 }
@@ -50,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 854; 
+ * @POSICAO-CURSOR = 968; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
