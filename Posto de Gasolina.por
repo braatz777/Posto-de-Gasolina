@@ -10,17 +10,24 @@ programa
 		* 1 - Etanol: Valor da litro é de R$ 6.8
      	* 2 - Comum: valor do litro e de 6.62
      	* 3 - Aditivada: Valor do litro é R$ 6.5
+     	* 4 - Disel: Valor do litro é R$ 6.34
 		 */
 
 			enquanto(verdadeiro){
-				
+				escreva("---ValorPorLitro---\n")
+				escreva("Etanol - R$6.8\n")
+				escreva("Comun - R$6.62\n")
+				escreva("Aditivada - R$6.5\n")
+				escreva("Disel - R$6.34\n")
+				escreva("---Gasolina---\n")
 				escreva("0 - Sair\n")
 				escreva("1 - Etanol\n")
         			escreva("2 - Comum\n")
-        			escreva("3- Aditivada\n")
+        			escreva("3 - Aditivada\n")
+        			escreva("4 - Disel\n")
 				escreva("Escolha: ")
 					leia(op)
-				escreva("Iforme quantos litros de Gasolina: ")
+				escreva("Informe quantos litros de Gasolina: ")
 					leia(qtd_gasolina)
 	
 				escolha(op){
@@ -42,6 +49,11 @@ programa
           			escreva("Valor final de: R$ ", v_gasolina, "\n")
           			pare
 
+          			caso 4:
+          			v_gasolina = qtd_gasolina * 6.34
+          			escreva("Valor final de: R$ ", v_gasolina, "\n")
+          			pare
+
 				}
 			}
 	}
@@ -51,7 +63,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 968; 
+ * @POSICAO-CURSOR = 330; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
