@@ -4,7 +4,7 @@ programa
 	funcao inicio()
 	{
 		inteiro op
-		real v_gasolina = 0.0, qtd_gasolina = 0.0
+		real v_gasolina = 0.0, qtd_gasolina = 0.0 , perc_desconto = 0.0
 
 		/*
 		* 1 - Etanol: Valor da litro é de R$ 6.8
@@ -23,8 +23,8 @@ programa
 				escreva("0 - Sair\n")
 				escreva("1 - Etanol\n")
         			escreva("2 - Comum\n")
-        			escreva("3 - Aditivada\n")
-        			escreva("4 - Disel\n")
+       	 		escreva("3 - Aditivada\n")
+        			escreva("4 - Diesel\n")
 				escreva("Escolha: ")
 					leia(op)
 				escreva("Informe quantos litros de Gasolina: ")
@@ -36,21 +36,37 @@ programa
 	
 					caso 1: 
 					v_gasolina = qtd_gasolina * 6.8
+					se(v_gasolina > 150){
+						perc_desconto = v_gasolina * 0.05
+						v_gasolina = v_gasolina - perc_desconto
+					}
 					escreva("Valor final de: R$ ", v_gasolina, "\n")
           			pare
 
           			caso 2:
 					v_gasolina = qtd_gasolina * 6.62
+					se(v_gasolina > 150){
+						perc_desconto = v_gasolina * 0.05
+						v_gasolina = v_gasolina - perc_desconto
+					}
 					escreva("Valor final de: R$ ", v_gasolina, "\n")
           			pare
 
           			caso 3:
           			v_gasolina = qtd_gasolina * 6.5
+					se(v_gasolina > 150){
+						perc_desconto = v_gasolina * 0.05
+						v_gasolina = v_gasolina - perc_desconto
+					}
           			escreva("Valor final de: R$ ", v_gasolina, "\n")
           			pare
 
           			caso 4:
           			v_gasolina = qtd_gasolina * 6.34
+					se(v_gasolina > 150){
+						perc_desconto = v_gasolina * 0.05
+						v_gasolina = v_gasolina - perc_desconto
+					}
           			escreva("Valor final de: R$ ", v_gasolina, "\n")
           			pare
 
@@ -58,12 +74,13 @@ programa
 			}
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 330; 
+ * @POSICAO-CURSOR = 1796; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
